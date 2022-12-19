@@ -121,3 +121,5 @@ const generalAssembly = {
         prompt: "Congratulations! You are now a junior developer at Google! After months of perseverance and sacrifice your journey to becoming a software engineer has officially ended and your career has begun. Good luck on your journey, the work is far from over!",
     },
 }
+
+export default generalAssembly
