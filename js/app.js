@@ -22,12 +22,12 @@ gameDiv.addEventListener('click', handleClick)
 /*------------ Functions ------------*/
 
 function init() {
-    gameDiv.innerHTML = ""
     currentIdx = 0
     render()
 }
 
 function render () {
+    gameDiv.innerHTML = ""
     const prompt = document.createElement('h3')
     prompt.textContent = generalAssembly[currentIdx].prompt
     gameDiv.appendChild(prompt)
