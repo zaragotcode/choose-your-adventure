@@ -17,7 +17,7 @@ const gameDiv = document.getElementById("game-div")
 
 playBtn.addEventListener('click', init)
 
-// gameDiv.addEventListener('click', handleClick)
+gameDiv.addEventListener('click', handleClick)
 
 /*------------ Functions ------------*/
 
@@ -44,4 +44,11 @@ function createBtns () {
         btn.id = options[key].next
         gameDiv.appendChild(btn)
     }
+}
+
+function handleClick (evt) {
+    if (evt.target.id === 'play') return
+    console.log(evt.target.id)
+    currentIdx = evt.target.id
+    render()
 }
