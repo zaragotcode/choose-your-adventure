@@ -42,13 +42,23 @@ function createBtns () {
         const btn = document.createElement('button')
         btn.textContent = options[key].selection
         btn.id = options[key].next
+        btn.classList.add("buttons")
+        
+        if (btn.id % 2 === 0) {
+            btn.style.backgroundColor = "blue"
+            btn.style.color = "white"
+        }
+        else {
+            btn.style.backgroundColor = "red"
+            btn.style.color = "white"
+        }
         gameDiv.appendChild(btn)
     }
 }
 
 function handleClick (evt) {
     if (evt.target.id === 'play') return
-    console.log(evt.target.id)
+    console.log(evt.target)
     currentIdx = evt.target.id
     render()
 }
