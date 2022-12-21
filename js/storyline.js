@@ -1,10 +1,10 @@
 
 const generalAssembly = {
-    a: {
+    0: {
         prompt: "You've chosen the bootcamp route! Your school of choice is General Assembly. Will you do part time or full time?",
         options: {
-            1: { selection: "Full time (Three months)", next: 'aB'},
-            2: { selection: "Part Time (Six months)", next: 'aC'}
+            a: { selection: "Full time (Three months)", next: 'aB'},
+            b: { selection: "Part Time (Six months)", next: 'aC'} 
         }
     },
     aB: {
@@ -13,12 +13,18 @@ const generalAssembly = {
     aC: {
         prompt: "You've selected part time. You will have more time on your hands but you will graduate later!",
     },
-
+    aB: {
+        prompt: "Next is the pre-assesment to qualify you for the bootcamp. You must correctly answer 2/4 questions to pass. Are you ready?",
+        options: {
+            a: { selection: "Yes!", next: 'bB'},
+            b: { selection: "No!", next: 'bB' }
+        }
+    },
     b: {
         prompt: "The course is set to start in two weeks. How will you use your time?",
         options: {
-            1: { selection: "Finish the pre-course work and then study JavaScript using The Odin Project", next: 'bB'},
-            2: { selection: "Take a break now that you've finished the pre-course work", next: 'bC'}
+            a: { selection: "Finish the pre-course work and then study JavaScript using The Odin Project", next: 'bB'},
+            b: { selection: "Take a break now that you've finished the pre-course work", next: 'bC'}
         }
     },
     bB: {
@@ -31,8 +37,8 @@ const generalAssembly = {
     c: {
         prompt: "You've begun learning array iterators but you're having trouble. What will you do?",
         options: {
-            1: { selection: "Schedule a 1-1 with Beryl!", next: 'cB'},
-            2: { selection: "Rewatch the lecture", next: 'cC'}
+            a: { selection: "Schedule a 1-1 with Beryl!", next: 'cB'},
+            b: { selection: "Rewatch the lecture", next: 'cC'}
         }
     },
     cB: {
@@ -45,8 +51,8 @@ const generalAssembly = {
     d: {
         prompt: "Friends want to hang out the day before the daily code challenges are due and you have a few challenges left. What will you do?",
         options: {
-            1: { selection: "I got this (go out with friends)", next: 'dB'},
-            2: { selection: "Go out another time and focus on the deliverable ", next: 'dC'}
+            a: { selection: "I got this (go out with friends)", next: 'dB'},
+            b: { selection: "Go out another time and focus on the deliverable ", next: 'dC'}
         }
     },
     dB: {
@@ -59,8 +65,8 @@ const generalAssembly = {
     e: {
         prompt: "The bootcamp is coming to an end and you're almost done. What will you do?",
         options: {
-            1: { selection: "Apply early for interview experience", next: 'eB'},
-            2: { selection: "Work on your portfolio and projects", next: 'eC'}
+            a: { selection: "Apply early for interview experience", next: 'eB'},
+            b: { selection: "Work on your portfolio and projects", next: 'eC'}
         }
     },
     eB: {
@@ -73,8 +79,8 @@ const generalAssembly = {
     f: {
         prompt: "You've officially graduated! You feel ecstatic but the work is far from done. What will you do now with everything you've learned?",
         options: {
-            1: { selection: "Apply for apprenticeships", next: 'fB'},
-            2: { selection: "Search for a junior developer position", next: 'fC'}
+            a: { selection: "Apply for apprenticeships", next: 'fB'},
+            b: { selection: "Search for a junior developer position", next: 'fC'}
         }
     },
     fB: {
@@ -87,8 +93,8 @@ const generalAssembly = {
     g: {
         prompt: "While applying yourLinkedIn post about graduating has blown up and alumni are connecting with you! From this you've gained referrals at all MAANG companies! Will you choose this route?",
         options: {
-            1: { selection: "YES!", next: 'h'},
-            2: { selection: "No thanks...", next: 'gOutcome'}
+            a: { selection: "YES!", next: 'h'},
+            b: { selection: "No thanks...", next: 'gOutcome'}
         }
     },
     gOutcome: {
@@ -98,11 +104,11 @@ const generalAssembly = {
     h: {
         prompt: "What MAANG will you select?",
         options: {
-            1: { selection: "Meta", next: 'hA'},
-            2: { selection: "Amazon", next: 'hB'},
-            3: { selection: "Apple", next: 'hC'},
-            4: { selection: "Netflix", next: 'hD'},
-            5: { selection: "Google", next: 'hE'},
+            a: { selection: "Meta", next: 'hA'},
+            b: { selection: "Amazon", next: 'hB'},
+            c: { selection: "Apple", next: 'hC'},
+            d: { selection: "Netflix", next: 'hD'},
+            e: { selection: "Google", next: 'hE'},
         }
     },
     hA: {
