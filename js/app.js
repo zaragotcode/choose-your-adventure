@@ -13,7 +13,9 @@ const playBtn = document.getElementById('play')
 const gameDiv = document.getElementById('game-div')
 
 const backBtn = document.getElementById('back-button')
+
 const musicPlayBtn = document.getElementById('play-button')
+
 const forwardBtn = document.getElementById('forward-button')
 
 // const favicon = document.getElementById("favicon")
@@ -23,6 +25,10 @@ const forwardBtn = document.getElementById('forward-button')
 playBtn.addEventListener('click', init)
 
 gameDiv.addEventListener('click', handleClick)
+
+musicPlayBtn.addEventListener('click', toggleFirstTrack)
+
+forwardBtn.addEventListener('click', toggleNextTrack)
 
 /*------------ Functions ------------*/
 
@@ -103,4 +109,11 @@ function faviconChange () {
 
 function toggleFirstTrack () {
     soundtrackCYA.playMainSoundtrack()
+    // musicPlayBtn.img="./assets/forward-button.png"
+}
+
+function toggleNextTrack () {
+    toggleFirstTrack.pause()
+    soundtrackCYA.playSecondSoundtrack()
+    // musicPlayBtn.img="./assets/forward-button.png"
 }

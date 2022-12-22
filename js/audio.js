@@ -1,31 +1,31 @@
-// let mainSoundtrack = new Audio('../assets/first-track.mp3')
-// let secondSoundtrack = new Audio('../assets/second-track.mp3')
-// let thirdSoundtrack = new Audio('../assets/third-track.mp3')
-// let fourthSoundtrack = new Audio('../assets/fourth-track.mp3')
+let mainSoundtrack = new Audio('../assets/first-track.mp3')
+let secondSoundtrack = new Audio('../assets/second-track.mp3')
+let thirdSoundtrack = new Audio('../assets/third-track.mp3')
+let fourthSoundtrack = new Audio('../assets/fourth-track.mp3')
 
-// function playMainSoundtrack() {
-//     firstTrack.volume = 0.25
-//     firstTrack.play()
-// }
+function playMainSoundtrack() {
+    mainSoundtrack.volume = 0.25
+    mainSoundtrack.play()
+}
 
-// function playSecondSoundtrack() {
-//     second.volume = 0.25
-//     secondTrack.play()
-// }
+function playSecondSoundtrack() {
+    secondSoundtrack.volume = 0.25
+    secondSoundtrack.play()
+}
 
-// function playThirdSoundtrack() {
-//     thirdTrack.volume = 0.25
-//     thirdTrack.play()
-// }
+function playThirdSoundtrack() {
+    thirdSoundtrack.volume = 0.25
+    thirdSoundtrack.play()
+}
 
-// function playFourthSoundtrack() {
-//     fourthTrack.volume = 0.25
-//     fourthTrack.play()
-// }
+function playFourthSoundtrack() {
+    fourthSoundtrack.volume = 0.25
+    fourthSoundtrack.play()
+}
 
-// export {
-//     playMainSoundtrack,
-//     playSecondSoundtrack,
-//     playThirdSoundtrack,
-//     playFourthSoundtrack
-// }
+export {
+    playMainSoundtrack,
+    playSecondSoundtrack,
+    playThirdSoundtrack,
+    playFourthSoundtrack
+}
