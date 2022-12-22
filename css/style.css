@@ -135,6 +135,7 @@ h4 {
 }
 
 #sound-buttons>div :hover {
+    filter: grayscale(100%);
     filter: invert();
     cursor: pointer;
 }
