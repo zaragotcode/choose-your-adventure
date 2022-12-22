@@ -10,6 +10,7 @@ html {
 
 body {
     background-color: black;
+    background: url('https://i.gifer.com/1ILH.gif');
     display: flex;
     justify-content: center;
 }
@@ -30,9 +31,7 @@ body {
     margin-top: 120px;
     width: 1000px;
     height: 500px;
-    background-color: gray;
-    border-radius: 36px;
-    border: 20px solid green ;
+
 }
 
 #player-attributes > p{
@@ -40,12 +39,24 @@ body {
     margin-bottom: 0px;
 }
 
+#button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid white;
+    width: 940px;
+    height: 160px;
+    margin-top: 10px;
+    padding: 20px;
+    padding-top: 30px;
+}
+
 #game-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: #bcbcbcec;
     margin: 10px;
     width: 940px;
     height: 430px;
@@ -67,4 +78,9 @@ body {
     background-color: lightgray;
     color: azure;
     
+}
+
+#game-div > h3{
+    color: black;
+    margin-top: 50px;
 }

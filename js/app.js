@@ -22,6 +22,7 @@ gameDiv.addEventListener('click', handleClick)
 /*------------ Functions ------------*/
 
 function init() {
+    console.log('sanity check')
     currentIdx = 0
     render()
 }
@@ -31,11 +32,15 @@ function render () {
     const prompt = document.createElement('h3')
     prompt.textContent = generalAssembly[currentIdx].prompt
     gameDiv.appendChild(prompt)
-    createBtns()
+    const btnDiv = document.createElement('div')
+        btnDiv.id = "button-div"
+        gameDiv.appendChild(prompt)
+        gameDiv.appendChild(btnDiv)
+    createBtns(btnDiv)
 }
 
 
-function createBtns () {
+function createBtns (btnDiv) {
     // Object destructuring, grabs the property located inside the object 
     const {options} = generalAssembly[currentIdx]
     for (const key in options) {
@@ -43,7 +48,6 @@ function createBtns () {
         btn.textContent = options[key].selection
         btn.id = options[key].next
         btn.classList.add("buttons")
-        
         if (btn.id % 2 === 0) {
             btn.style.backgroundColor = "blue"
             btn.style.color = "white"
@@ -52,7 +56,7 @@ function createBtns () {
             btn.style.backgroundColor = "red"
             btn.style.color = "white"
         }
-        gameDiv.appendChild(btn)
+        btnDiv.appendChild(btn)
     }
 }
 
