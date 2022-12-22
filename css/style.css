@@ -114,7 +114,10 @@ h4 {
 
 #soundtrack {
     position: absolute;
-    background-color: #0070ec;
+    color: white;
+    background: url("https://media.tenor.com/1f5_2MkOz8cAAAAC/8bit-dance.gif");
+    background-position: center;
+    background-size: auto;
     top: 200px;
     right: 28px;
     height: 175px;
@@ -126,8 +129,12 @@ h4 {
 #sound-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    /* margin-top: ; */
+    justify-content: space-around;
+    margin-top: 80px;
     z-index: 2;
-    border: 1px solid yellow;
+}
+
+#sound-buttons>div :hover {
+    filter: invert();
+    cursor: pointer;
 }
