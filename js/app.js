@@ -68,28 +68,29 @@ function handleClick (evt) {
     if (evt.target.id === 'play') return
     console.log(evt.target)
     currentIdx = evt.target.id
+    // faviconChange()
     render()
 }
 
 function faviconChange () {
     //Meta Favicon
     if (currentIdx === 28) {
-        favicon.href = "./assets/Amazon-Favicon.jpg"
+        favicon.href = "./assets/Amazon-Favicon.png"
     }
     //Amazon Favicon
     if (currentIdx === 29) {
-        favicon.href = "./assets/Amazon-Favicon.jpg"
+        favicon.href = "./assets/Amazon-Favicon.png"
     }
     //Apple Favicon
     if (currentIdx === 30) {
-        favicon.href = "./assets/Apple-Favicon.jpg"
+        favicon.href = "./assets/Apple-Favicon.png"
     }
     //Netflix Favicon
     if (currentIdx === 31) {
-        favicon.href = "./assets/Amazon-Favicon.jpg"
+        favicon.href = "./assets/Amazon-Favicon.png"
     }
     //Google Favicon
     if (currentIdx === 32) {
-        favicon.href = "./assets/Google-Favicon.jpg"
+        favicon.href = "./assets/Google-Favicon.png"
     }
 }
