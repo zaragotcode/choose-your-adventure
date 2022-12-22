@@ -12,6 +12,7 @@ const playBtn = document.getElementById("play")
 
 const gameDiv = document.getElementById("game-div")
 
+const favicon = documentGetElementById.getElementById("favicon")
 
 /*--------- Event Listeners ---------*/
 
@@ -68,4 +69,27 @@ function handleClick (evt) {
     console.log(evt.target)
     currentIdx = evt.target.id
     render()
+}
+
+function faviconChange () {
+    //Meta Favicon
+    if (currentIdx === 28) {
+        favicon.href = "./assets/Amazon-Favicon.jpg"
+    }
+    //Amazon Favicon
+    if (currentIdx === 29) {
+        favicon.href = "./assets/Amazon-Favicon.jpg"
+    }
+    //Apple Favicon
+    if (currentIdx === 30) {
+        favicon.href = "./assets/Apple-Favicon.jpg"
+    }
+    //Netflix Favicon
+    if (currentIdx === 31) {
+        favicon.href = "./assets/Amazon-Favicon.jpg"
+    }
+    //Google Favicon
+    if (currentIdx === 32) {
+        favicon.href = "./assets/Google-Favicon.jpg"
+    }
 }
