@@ -114,7 +114,7 @@ h4 {
 
 #soundtrack {
     position: absolute;
-    color: white;
+    color: rgb(255, 5, 255);
     background: url("https://media.tenor.com/1f5_2MkOz8cAAAAC/8bit-dance.gif");
     background-position: center;
     background-size: inherit;

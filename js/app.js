@@ -8,9 +8,13 @@ let currentIdx
 
 /*---- Cached Element References ----*/
 
-const playBtn = document.getElementById("play")
+const playBtn = document.getElementById('play')
 
-const gameDiv = document.getElementById("game-div")
+const gameDiv = document.getElementById('game-div')
+
+const backBtn = document.getElementById('back-button')
+const musicPlayBtn = document.getElementById('play-button')
+const forwardBtn = document.getElementById('forward-button')
 
 // const favicon = document.getElementById("favicon")
 
@@ -34,8 +38,8 @@ function render () {
     gameDiv.appendChild(prompt)
     const btnDiv = document.createElement('div')
     const promptDiv = document.createElement('div')
-    btnDiv.id = "button-div"
-    promptDiv.id = "prompt-div"
+    btnDiv.id = 'button-div'
+    promptDiv.id = 'prompt-div'
     promptDiv.appendChild(prompt)
     gameDiv.appendChild(promptDiv)
     gameDiv.appendChild(btnDiv)
@@ -50,14 +54,14 @@ function createBtns (btnDiv) {
         const btn = document.createElement('button')
         btn.textContent = options[key].selection
         btn.id = options[key].next
-        btn.classList.add("buttons")
+        btn.classList.add('buttons')
         if (btn.id % 2 === 0) {
-            btn.style.backgroundColor = "blue"
-            btn.style.color = "white"
+            btn.style.backgroundColor = 'blue'
+            btn.style.color = 'white'
         }
         else {
-            btn.style.backgroundColor = "red"
-            btn.style.color = "white"
+            btn.style.backgroundColor = 'red'
+            btn.style.color = 'white'
         }
         btnDiv.appendChild(btn)
     }
@@ -77,22 +81,26 @@ function handleClick (evt) {
 function faviconChange () {
     //Meta Favicon
     if (currentIdx === 28) {
-        favicon.href = "./assets/Amazon-Favicon.png"
+        favicon.href = './assets/Amazon-Favicon.png'
     }
     //Amazon Favicon
     if (currentIdx === 29) {
-        favicon.href = "./assets/Amazon-Favicon.png"
+        favicon.href = './assets/Amazon-Favicon.png'
     }
     //Apple Favicon
     if (currentIdx === 30) {
-        favicon.href = "./assets/Apple-Favicon.png"
+        favicon.href = './assets/Apple-Favicon.png'
     }
     //Netflix Favicon
     if (currentIdx === 31) {
-        favicon.href = "./assets/Amazon-Favicon.png"
+        favicon.href = './assets/Amazon-Favicon.png'
     }
     //Google Favicon
     if (currentIdx === 32) {
-        favicon.href = "./assets/Google-Favicon.png"
+        favicon.href = './assets/Google-Favicon.png'
     }
+}
+
+function toggleFirstTrack () {
+    soundtrackCYA.playMainSoundtrack()
 }
