@@ -42,13 +42,21 @@ body {
 #button-div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
     border: 2px solid white;
     width: 940px;
     height: 160px;
     margin-top: 10px;
     padding: 20px;
     padding-top: 30px;
+}
+
+#prompt-div {
+    border: 2px solid green;
+    text-align: center;
 }
 
 #game-div {
@@ -82,5 +90,5 @@ body {
 
 #game-div > h3{
     color: black;
-    margin-top: 50px;
+    margin-top: 20px;
 }

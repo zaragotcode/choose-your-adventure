@@ -33,8 +33,11 @@ function render () {
     prompt.textContent = generalAssembly[currentIdx].prompt
     gameDiv.appendChild(prompt)
     const btnDiv = document.createElement('div')
+    const promptDiv = document.createElement('div')
         btnDiv.id = "button-div"
-        gameDiv.appendChild(prompt)
+        promptDiv.id = "prompt-div"
+        promptDiv.appendChild(prompt)
+        gameDiv.appendChild(promptDiv)
         gameDiv.appendChild(btnDiv)
     createBtns(btnDiv)
 }
@@ -55,6 +58,11 @@ function createBtns (btnDiv) {
         else {
             btn.style.backgroundColor = "red"
             btn.style.color = "white"
+        }
+        if (btnDiv.length > 2) {
+            btn.style.flexDirection = "none"
+            btn.style.justifyContent = "center"
+            btn.style.alignItems = "center"
         }
         btnDiv.appendChild(btn)
     }
