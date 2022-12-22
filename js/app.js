@@ -64,7 +64,11 @@ function createBtns (btnDiv) {
 }
 
 function handleClick (evt) {
+    console.log('CHECK', evt.target.id)
     if (evt.target.id === 'play') return
+    if (isNaN(evt.target.id)) {
+        return
+      }
     currentIdx = evt.target.id
     faviconChange()
     render()

@@ -117,7 +117,7 @@ h4 {
     color: white;
     background: url("https://media.tenor.com/1f5_2MkOz8cAAAAC/8bit-dance.gif");
     background-position: center;
-    background-size: auto;
+    background-size: inherit;
     top: 200px;
     right: 28px;
     height: 175px;
