@@ -8,7 +8,7 @@ const generalAssembly = {
         }
     },
     1: {
-        prompt: "You've selected full time! As a result you will graduate earlier but the learning is more intense and the bootcamp will take up most of your time",
+        prompt: "You've selected full time! As a result you will graduate earlier but the learning is more intense and the bootcamp will take up most of your time.",
         options: {
             a: { selection: "Next", next: 3},
         }
@@ -74,13 +74,13 @@ const generalAssembly = {
         }
     },
     11: {
-        prompt: "Beryl is amazing! She helps you with array iterators and you grasp it perfectly! As a result you build a habit of attending TA hours and asking your senior SWE's for help which assists with your progression throughout the course and later in your career",
+        prompt: "Beryl is amazing! She helps you with array iterators and you grasp it perfectly! As a result you build a habit of attending TA hours and asking your seniors for help which assists with your progression throughout the course and later on in your career.",
         options: {
             a: { selection: "Next", next: 13}
         }
     },
     12: {
-        prompt: "Rewatching lectures is a great habit! You develop the skill to grasps topics by watching videos and this also helps in your note taking as well.This helps with your progression throughout the course and career",
+        prompt: "Rewatching lectures is a great habit! You develop the skill to grasps topics by watching videos and this also helps in your note taking as well.This helps with your progression throughout the course and career.",
         options: {
             a: { selection: "Next", next: 13}
         }
@@ -100,20 +100,20 @@ const generalAssembly = {
         }
     },
     15: {
-        prompt: "You choose to stay home and work on the daily code challenges. You finish them all and even make some one liner solutions! The next day you are selected by the student picker and the class is amazed with your solutions! They all clap for you and Ian gives you bird bucks. This boost your motivation and momentum even more and this is seen in all of your projects. ",
+        prompt: "You choose to stay home and work on the daily code challenges. You finish them all and even make some one liner solutions! The next day you are selected by the student picker and the class is amazed with your solutions! They all clap for you and Ian gives you bird bucks. This boost your motivation and momentum even more (this is seen later in all of your projects). ",
         options: {
             a: { selection: "Next", next: 16}
         }
     },
     16: {
-        prompt: "The bootcamp is now coming to an end and you're almost, just one last unit project. What will you do?",
+        prompt: "The bootcamp is now coming to an end and you're almost done, but there is just one last unit project. What will you do?",
         options: {
             a: { selection: "Use chatGPT instead of working on it yourself so that you can apply instead.", next: 18},
             b: { selection: "Finish you last project using everything you've learned to make your best project yet!", next: 17}
         }
     },
     17: {
-        prompt: "Your project was absolutely AMAZING! The whole cohort loved it and you gained a sensational portfolio peace! ",
+        prompt: "Your project was absolutely AMAZING! The whole cohort loved it and you gained a sensational portfolio piece! Way to go, you've came such a long way!",
         options: {
             a: { selection: "Next", next: 19}
         }

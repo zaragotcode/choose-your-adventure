@@ -12,7 +12,7 @@ const playBtn = document.getElementById("play")
 
 const gameDiv = document.getElementById("game-div")
 
-const favicon = documentGetElementById.getElementById("favicon")
+// const favicon = document.getElementById("favicon")
 
 /*--------- Event Listeners ---------*/
 
@@ -23,7 +23,6 @@ gameDiv.addEventListener('click', handleClick)
 /*------------ Functions ------------*/
 
 function init() {
-    console.log('sanity check')
     currentIdx = 0
     render()
 }
@@ -35,11 +34,11 @@ function render () {
     gameDiv.appendChild(prompt)
     const btnDiv = document.createElement('div')
     const promptDiv = document.createElement('div')
-        btnDiv.id = "button-div"
-        promptDiv.id = "prompt-div"
-        promptDiv.appendChild(prompt)
-        gameDiv.appendChild(promptDiv)
-        gameDiv.appendChild(btnDiv)
+    btnDiv.id = "button-div"
+    promptDiv.id = "prompt-div"
+    promptDiv.appendChild(prompt)
+    gameDiv.appendChild(promptDiv)
+    gameDiv.appendChild(btnDiv)
     createBtns(btnDiv)
 }
 
@@ -66,9 +65,8 @@ function createBtns (btnDiv) {
 
 function handleClick (evt) {
     if (evt.target.id === 'play') return
-    console.log(evt.target)
     currentIdx = evt.target.id
-    // faviconChange()
+    faviconChange()
     render()
 }
 
