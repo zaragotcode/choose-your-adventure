@@ -59,11 +59,6 @@ function createBtns (btnDiv) {
             btn.style.backgroundColor = "red"
             btn.style.color = "white"
         }
-        if (btnDiv.length > 2) {
-            btn.style.flexDirection = "none"
-            btn.style.justifyContent = "center"
-            btn.style.alignItems = "center"
-        }
         btnDiv.appendChild(btn)
     }
 }
