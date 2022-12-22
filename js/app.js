@@ -26,9 +26,7 @@ playBtn.addEventListener('click', init)
 
 gameDiv.addEventListener('click', handleClick)
 
-musicPlayBtn.addEventListener('click', toggleFirstTrack)
-
-forwardBtn.addEventListener('click', toggleNextTrack)
+musicPlayBtn.addEventListener('click', togglePlay)
 
 /*------------ Functions ------------*/
 
@@ -80,40 +78,14 @@ function handleClick (evt) {
         return
     }
     currentIdx = evt.target.id
-    faviconChange()
     render()
 }
 
-function faviconChange () {
-    //Meta Favicon
-    if (currentIdx === 28) {
-        favicon.href = './assets/Amazon-Favicon.png'
-    }
-    //Amazon Favicon
-    if (currentIdx === 29) {
-        favicon.href = './assets/Amazon-Favicon.png'
-    }
-    //Apple Favicon
-    if (currentIdx === 30) {
-        favicon.href = './assets/Apple-Favicon.png'
-    }
-    //Netflix Favicon
-    if (currentIdx === 31) {
-        favicon.href = './assets/Amazon-Favicon.png'
-    }
-    //Google Favicon
-    if (currentIdx === 32) {
-        favicon.href = './assets/Google-Favicon.png'
-    }
-}
-
-function toggleFirstTrack () {
+function togglePlay () {
     soundtrackCYA.playMainSoundtrack()
-    // musicPlayBtn.img="./assets/forward-button.png"
-}
-
-function toggleNextTrack () {
-    toggleFirstTrack.pause()
-    soundtrackCYA.playSecondSoundtrack()
-    // musicPlayBtn.img="./assets/forward-button.png"
+    if(document.getElementById('play-id').src == './assets/play-button.png') {
+        document.getElementById('play-id').src = './assets/pause-button.png'
+    } else {
+        document.getElementById('play-id').src == './assets/play-button.png'
+    }
 }
