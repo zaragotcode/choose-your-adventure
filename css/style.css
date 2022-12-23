@@ -135,3 +135,42 @@ h4 {
     filter: invert();
     cursor: pointer;
 }
+
+#left-screen{
+    position: absolute;
+    width: 424px;
+    height: 110px;
+    background: url('https://cdnb.artstation.com/p/assets/images/images/036/125/405/original/igor-freitas-mesa.gif?1616779562');
+    background-size: 424px 110px;
+    background-position: center;
+    left: 44px;
+    top: 57px;
+    z-index: -1;
+    visibility: hidden;
+}
+
+#middle-screen{
+    position: absolute;
+    width: 424px;
+    height: 110px;
+    background: url('https://i.pinimg.com/originals/9b/0b/c6/9b0bc63a987fbaa2beaa44ba94e105d7.gif');
+    background-size: 424px 110px;
+    background-position: center;
+    left: 556px;
+    top: 57px;
+    z-index: -1;
+    visibility: hidden;
+}
+
+#right-screen{
+    position: absolute;
+    width: 424px;
+    height: 110px;
+    background: url('https://thumbs.gfycat.com/AlienatedSafeFrogmouth-size_restricted.gif');
+    background-size: 424px 110px;
+    background-position: center;
+    left: 1068px;
+    top: 57px;
+    z-index: -1;
+    visibility: hidden;
+}
