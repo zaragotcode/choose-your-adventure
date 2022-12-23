@@ -14,7 +14,7 @@ const generalAssembly = {
         }
     },
     2: {
-        prompt: "You've selected part time. You will have more time on your hands but you will graduate later!",
+        prompt: "You've selected part time. You will have more time on your hands but you will graduate later.",
         options: {
             a: { selection: "Next", next: 3},
         }
@@ -54,7 +54,7 @@ const generalAssembly = {
         }
     },
     8: {
-        prompt: "As a result of studying you breeze through the Installfest and have a basic understanding of JavaScript which helps you catch on super quickly. This motivates you even more and your passion for software engineering grows!",
+        prompt: "As a result of studying, you breeze through the Installfest and obtain a basic understanding of JavaScript which helps you catch on quickly. This benefits you during the bootcamp and your passion for software engineering grows!",
         options: {
             a: { selection: "Next", next: 10}
         }
@@ -66,7 +66,7 @@ const generalAssembly = {
         }
     },
     10: {
-        prompt: "You've begun learning array iterators but you're having trouble. What will you do?",
+        prompt: "You've begun learning array iterators but you're having trouble understand it. What will you do?",
         options: {
             a: { selection: "Schedule a 1-1 with Beryl!", next: 11},
             b: { selection: "Rewatch the lecture", next: 12}
@@ -86,20 +86,20 @@ const generalAssembly = {
     },
 
     13: {
-        prompt: "Friends want to hang out the day before the daily code challenges are due and you have a few challenges left. What will you do?",
+        prompt: "Friends want to hang out the day before the daily code challenges are due but you have a few challenges left to complete. What will you do?",
         options: {
             a: { selection: "I got this (go out with friends)", next: 14},
             b: { selection: "Go out another time and focus on the deliverable ", next: 15}
         }
     },
     14: {
-        prompt: "Oh no! You get home late and fall asleep. The next morning you're selected by the student picker and can't turn in the assignment on time. Luckily your instructors work with you on this, but you shouldn't do it again!",
+        prompt: "Oh no! You get home late and fall asleep. The next morning you're selected by the student picker and you have no answer! You also can't turn in the assignment on time. Luckily your instructors work with you on this, but you shouldn't do it again!",
         options: {
             a: { selection: "Next", next: 16}
         }
     },
     15: {
-        prompt: "You choose to stay home and work on the daily code challenges. You finish them all and even make some one liner solutions! The next day you are selected by the student picker and the class is amazed with your solutions! They all clap for you and Ian gives you bird bucks. This boost your motivation and momentum even more (this is seen later in all of your projects). ",
+        prompt: "You choose to stay home and work on the daily code challenges. You finish them all and even make some one liner arrow functions! The next day you are selected by the student picker and the class is amazed with your solutions! They all clap for you and Ian rewards you bird bucks. This boost your motivation even more (this is seen later in all of your projects)!",
         options: {
             a: { selection: "Next", next: 16}
         }
@@ -107,7 +107,7 @@ const generalAssembly = {
     16: {
         prompt: "The bootcamp is now coming to an end and you're almost done, but there is just one last unit project. What will you do?",
         options: {
-            a: { selection: "Use chatGPT instead of working on it yourself so that you can apply instead.", next: 18},
+            a: { selection: "Use ChatGPT instead of working on it yourself so that you can apply instead.", next: 18},
             b: { selection: "Finish you last project using everything you've learned to make your best project yet!", next: 17}
         }
     },
@@ -118,7 +118,7 @@ const generalAssembly = {
         }
     },
     18: {
-        prompt: "Caught! David noticed errors and you couldn't explain your work! You had no choice but to cough up that you used chatGPT and put no effort in. You were removed from the program without a certification. ",
+        prompt: "Caught! David noticed errors and you couldn't explain any of the code! You had no choice but to cough up that you used ChatGPT and put no effort in. You were removed from the program without a certification. ",
         options: {
             a: { selection: "Play Again", next: 0}
         }
@@ -126,43 +126,43 @@ const generalAssembly = {
     19: {
         prompt: "It's the last week! Almost there. What will you do with your time?",
         options: {
-            a: { selection: "Apply early for interview experience", next: 20},
-            b: { selection: "Work on your portfolio and projects", next: 21}
+            a: { selection: "Apply early for interview experience.", next: 20},
+            b: { selection: "Work on your portfolio and projects.", next: 21}
         }
     },
     20: {
-        prompt: "You've selected to apply early! It makes it harder to stand out in more competitive positions but you gain great experience and get comfortable interviewing which recruiters compliment you on.",
+        prompt: "You've selected to apply early! This choice makes it harder to stand out in more competitive positions but you gain great experience and get comfortable interviewing which recruiters later compliment you on.",
         options: {
             a: { selection: "Next", next: 22}
         }
     },
     21: {
-        prompt: "You've selected to work on more personal projects and do more work on your portfolio! As a result, you tend to be nervous during interviews but the recruiters love your work ethic and compliment you as your work helps you stand out from other candidates.",
+        prompt: "You've selected to work on more personal projects and do more work on your portfolio. As a result, you tend to be nervous during interviews but the recruiters love your work ethic and compliment you as your work helps you stand out from other candidates.",
         options: {
             a: { selection: "Next", next: 22}
         }
     },
     22: {
-        prompt: "You've officially graduated! You feel ecstatic but the work is far from done. What will you do now with everything you've learned?",
+        prompt: "You've officially graduated! You feel ecstatic but you know the work is far from done. What will you do now with everything you've learned?",
         options: {
             a: { selection: "Apply for apprenticeships", next: 23},
             b: { selection: "Search for a junior developer position", next: 24}
         }
     },
     23: {
-        prompt: "You've chosen to apply for an apprenticeship. This allows you to work under great companies that will continue to provide mentorship while using your skills in a work environment. Based on your performance the company may possibly hire you in once your apprenticeship is over.",
+        prompt: "You've chosen to apply for an apprenticeship. This allows you to work under great companies that will continue to provide mentorship while using your skills in a work environment. Based on your performance the company may possibly hire you in once your apprenticeship is over so make sure to work hard!",
         options: {
             a: { selection: "Next", next: 25}
         }
     },
     24: {
-        prompt: "You've chosen to apply for an junior developer positions. This option allows you to gain more pay and gain work experience but transferring to the companies you may desire to work at will be harder as you wouldn't be an internal hire.",
+        prompt: "You've chosen to apply for an junior developer positions. This option allows you to gain more pay and gain work experience but transferring to the companies you may desire to work at may be harder as you wouldn't be an internal hire.",
         options: {
             a: { selection: "Next", next: 25}
         }
     },
     25: {
-        prompt: "While applying yourLinkedIn post about graduating has blown up and alumni are connecting with you! From this you've gained referrals at all MAANG companies! Will you choose this route?",
+        prompt: "While applying yourLinkedIn post about graduating has blown up! Alumni from all over are connecting with you and you now have referrals at all MAANG companies! Will you choose to take this route?",
         options: {
             a: { selection: "YES!", next: 27},
             b: { selection: "No thanks...", next: 26}
@@ -213,13 +213,6 @@ const generalAssembly = {
         prompt: "Congratulations! You are now a junior developer at Google! After months of perseverance and sacrifice your journey to becoming a software engineer has officially ended and your career has begun. Good luck on your journey, the work is far from over!",
         options: {
             a: { selection: "Play Again", next: '0'},
-        }
-    },
-    200: {
-        prompt: "",
-        options: {
-            a: { selection: "", next: '0'},
-            b: { selection: "", next: '2' }
         }
     },
 }
