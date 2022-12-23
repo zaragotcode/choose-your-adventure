@@ -1,5 +1,5 @@
 /*------------ Constants ------------*/
-import generalAssembly from "./storyline.js"
+import generalAssembly from './storyline.js'
 import * as soundtrackCYA from './audio.js'
 /*------------ Variables ------------*/
 
@@ -7,9 +7,9 @@ let currentIdx
 
 let i = 0;
 
-let txt = 'Software Engineer Edition'; /* The text */
+let txt = 'Software Engineer Edition';
 
-let currentTxt = ""
+let currentTxt = ''
 
 var speed = 100; /* The speed/duration of the effect in milliseconds */
 
@@ -19,19 +19,9 @@ const playBtn = document.getElementById('play')
 
 const gameDiv = document.getElementById('game-div')
 
-const backBtn = document.getElementById('back-button')
-
 const musicPlayBtn = document.getElementById('play-button')
 
-const forwardBtn = document.getElementById('forward-button')
-
 const editionTxt = document.getElementById('edition')
-
-const leftScreen = document.getElementById('left-screen')
-
-// const middleScreen = document.getElementById('middle-screen')
-
-// const rightScreen = document.getElementById('right-screen')
 
 /*--------- Event Listeners ---------*/
 
@@ -89,14 +79,10 @@ function createBtns (btnDiv) {
 }
 
 function handleClick (evt) {
-    console.log('CHECK', evt.target.id)
     if (evt.target.id === 'play') return
     if (isNaN(evt.target.id) || !evt.target.id) {
         return
     }
-    enableLeftComputer()
-    enableMiddleComputer()
-    enableRightomputer()
     currentIdx = evt.target.id
     render()
 }
@@ -106,41 +92,17 @@ function togglePlay () {
 }
 
 function typeWriter() {
-    if (document.getElementById("edition").textContent = "Hover here!") {
-        document.getElementById("edition").textContent = ""
+    if (document.getElementById('edition').textContent = 'Hover here!') {
+        document.getElementById('edition').textContent = ''
     }
     if (i < txt.length) {
         currentTxt += txt.charAt(i)
-        document.getElementById("edition").innerHTML = currentTxt;
+        document.getElementById('edition').innerHTML = currentTxt;
         i++;
         setTimeout(typeWriter, speed);
   } else {
-    document.getElementById("edition").innerHTML = txt;
+    document.getElementById('edition').innerHTML = txt;
+    document.getElementById('edition').style.color = 'purple';
     return
   }
 }
-
-function enableLeftComputer() {
-    if (currentIdx == 1 || 2) {
-        leftScreen.style.visibility = "visible"
-        currentIdx = evt.target.id
-    }
-    // else if (currentIdx = 22 || 27) {
-    //     leftScreen.style.visibility = "visible"
-    // }
-    // if (currentIdx = 26 || 28 || 29 || 30 || 31 ) {
-    //     leftScreen.style.visibility = "visible"
-    // }
-}
-
-// function enableMiddleComputer() {
-//     if (currentIdx = 22 || 27) {
-//         leftScreen.style.visibility = "visible"
-//     }
-// }
-
-// function enableRightomputer() {
-//     if (currentIdx = 26 || 28 || 29 || 30 || 31 ) {
-//         leftScreen.style.visibility = "visible"
-//     }
-// }

@@ -147,7 +147,6 @@ h4 {
     left: 44px;
     top: 57px;
     z-index: -1;
-    visibility: hidden;
 }
 
 #middle-screen{
@@ -160,7 +159,6 @@ h4 {
     left: 556px;
     top: 57px;
     z-index: -1;
-    visibility: hidden;
 }
 
 #right-screen{
@@ -173,5 +171,4 @@ h4 {
     left: 1068px;
     top: 57px;
     z-index: -1;
-    visibility: hidden;
 }

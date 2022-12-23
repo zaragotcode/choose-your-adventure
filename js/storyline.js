@@ -30,7 +30,6 @@ const generalAssembly = {
         prompt: "You decided you were not ready to take the pre-assessment which ends the storyline for path of software engineering. Will you take the risk and try again?",
         options: {
             a: { selection: "Play Again", next: '0'},
-            b: { selection: "Exit Game", next: '200' }
         }
     },
     5: {
@@ -170,7 +169,7 @@ const generalAssembly = {
         }
     },
     26: {
-        prompt: "You decided not to work at a MAANG company. You continue applying and two months later land a junior developer. Congratulations! After months of perseverance and sacrifice your journey to becoming a software engineer has officially ended and your career has begun. Good luck on your journey, the work is far from over.",
+        prompt: "You decided not to work at a MAANG company. You continue applying and two months later land a junior developer position. Congratulations! After months of perseverance and sacrifice your journey to becoming a software engineer has officially ended and your career has begun! Good luck on your journey, the work is far from over.",
         options: {
             a: { selection: "Play Again", next: 0}
         }
@@ -190,35 +189,30 @@ const generalAssembly = {
         prompt: "Congratulations! You are now a junior developer at Meta! After months of perseverance and sacrifice your journey to becoming a software engineer has officially ended and your career has begun. Good luck on your journey, the work is far from over!",
         options: {
             a: { selection: "Play Again", next: '0'},
-            b: { selection: "Exit Game", next: '200' }
         }
     },
     29: {
         prompt: "Congratulations! You are now a junior developer at Amazon! After months of perseverance and sacrifice your journey to becoming a software engineer has officially ended and your career has begun. Good luck on your journey, the work is far from over!",
         options: {
             a: { selection: "Play Again", next: '0'},
-            b: { selection: "Exit Game", next: '200' }
         }
     },
     30: {
         prompt: "Congratulations! You are now a junior developer at Apple! After months of perseverance and sacrifice your journey to becoming a software engineer has officially ended and your career has begun. Good luck on your journey, the work is far from over!",
         options: {
             a: { selection: "Play Again", next: '0'},
-            b: { selection: "Exit Game", next: '200' }
         }
     },
     31: {
         prompt: "Congratulations! You are now a junior developer at Netflix! After months of perseverance and sacrifice your journey to becoming a software engineer has officially ended and your career has begun. Good luck on your journey, the work is far from over!",
         options: {
             a: { selection: "Play Again", next: '0'},
-            b: { selection: "Exit Game", next: '200' }
         }
     },
     32: {
         prompt: "Congratulations! You are now a junior developer at Google! After months of perseverance and sacrifice your journey to becoming a software engineer has officially ended and your career has begun. Good luck on your journey, the work is far from over!",
         options: {
             a: { selection: "Play Again", next: '0'},
-            b: { selection: "Exit Game", next: '200' }
         }
     },
     200: {
