@@ -27,6 +27,12 @@ const forwardBtn = document.getElementById('forward-button')
 
 const editionTxt = document.getElementById('edition')
 
+const leftScreen = document.getElementById('left-screen')
+
+// const middleScreen = document.getElementById('middle-screen')
+
+// const rightScreen = document.getElementById('right-screen')
+
 /*--------- Event Listeners ---------*/
 
 playBtn.addEventListener('click', init)
@@ -78,6 +84,7 @@ function createBtns (btnDiv) {
             btn.style.color = 'white'
         }
         btnDiv.appendChild(btn)
+        btn.style.cursor = "pointer"
     }
 }
 
@@ -87,6 +94,9 @@ function handleClick (evt) {
     if (isNaN(evt.target.id) || !evt.target.id) {
         return
     }
+    enableLeftComputer()
+    enableMiddleComputer()
+    enableRightomputer()
     currentIdx = evt.target.id
     render()
 }
@@ -109,3 +119,28 @@ function typeWriter() {
     return
   }
 }
+
+function enableLeftComputer() {
+    if (currentIdx == 1 || 2) {
+        leftScreen.style.visibility = "visible"
+        currentIdx = evt.target.id
+    }
+    // else if (currentIdx = 22 || 27) {
+    //     leftScreen.style.visibility = "visible"
+    // }
+    // if (currentIdx = 26 || 28 || 29 || 30 || 31 ) {
+    //     leftScreen.style.visibility = "visible"
+    // }
+}
+
+// function enableMiddleComputer() {
+//     if (currentIdx = 22 || 27) {
+//         leftScreen.style.visibility = "visible"
+//     }
+// }
+
+// function enableRightomputer() {
+//     if (currentIdx = 26 || 28 || 29 || 30 || 31 ) {
+//         leftScreen.style.visibility = "visible"
+//     }
+// }
