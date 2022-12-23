@@ -1,10 +1,17 @@
 /*------------ Constants ------------*/
 import generalAssembly from "./storyline.js"
 import * as soundtrackCYA from './audio.js'
-
 /*------------ Variables ------------*/
 
 let currentIdx 
+
+let i = 0;
+
+let txt = 'Software Engineer Edition'; /* The text */
+
+let currentTxt = ""
+
+var speed = 100; /* The speed/duration of the effect in milliseconds */
 
 /*---- Cached Element References ----*/
 
@@ -18,7 +25,7 @@ const musicPlayBtn = document.getElementById('play-button')
 
 const forwardBtn = document.getElementById('forward-button')
 
-// const favicon = document.getElementById("favicon")
+const editionTxt = document.getElementById('edition')
 
 /*--------- Event Listeners ---------*/
 
@@ -28,10 +35,13 @@ gameDiv.addEventListener('click', handleClick)
 
 musicPlayBtn.addEventListener('click', togglePlay)
 
+editionTxt.addEventListener('mouseover',typeWriter)
+
 /*------------ Functions ------------*/
 
 function init() {
     currentIdx = 0
+    typeWriter()
     render()
 }
 
@@ -83,9 +93,19 @@ function handleClick (evt) {
 
 function togglePlay () {
     soundtrackCYA.playMainSoundtrack()
-    if(document.getElementById('play-id').src == './assets/play-button.png') {
-        document.getElementById('play-id').src = './assets/pause-button.png'
-    } else {
-        document.getElementById('play-id').src == './assets/play-button.png'
+}
+
+function typeWriter() {
+    if (document.getElementById("edition").textContent = "Hover here!") {
+        document.getElementById("edition").textContent = ""
     }
+    if (i < txt.length) {
+        currentTxt += txt.charAt(i)
+        document.getElementById("edition").innerHTML = currentTxt;
+        i++;
+        setTimeout(typeWriter, speed);
+  } else {
+    document.getElementById("edition").innerHTML = txt;
+    return
+  }
 }
