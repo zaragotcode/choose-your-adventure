@@ -32,3 +32,4 @@ Choose your adventure is a web-based simulation game that allows the player to c
 
 - [ ] Make previous and forward music buttons functional
 - [ ] Add typewriter effect to each prompt
+- [ ] Include accessibility 
